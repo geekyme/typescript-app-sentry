@@ -99,9 +99,10 @@ kubectl create -f sentry-deployment.yaml
 
 7. Go into the sentry pod and create the first admin user
 
-`kubectl exec <sentry_pod_id> -- /bin/sh`
-
-`sentry createuser`
+```
+kubectl exec <sentry_pod_id> -- /bin/sh
+sentry createuser
+```
 
 Follow the prompts thereafter.
 
