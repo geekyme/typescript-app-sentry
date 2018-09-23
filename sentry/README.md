@@ -79,7 +79,7 @@ kubectl create -f redis-deployment.yaml
 kubectl create -f smtp-deployment.yaml
 ```
 
-3. On kubernetes, expose `memcached`, `postgres`, `redis` and `smtp` via services so that sentry can reach them
+3. On kubernetes, expose `memcached`, `postgres`, `redis` and `smtp` via services so that sentry can reach them. See this [guide](https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/).
 
 4. Create an ad-hoc deployment to run sentry migrations:
 
