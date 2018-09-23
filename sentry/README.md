@@ -58,8 +58,8 @@ containers:
 ```
 
 3. Paste the copied contents into `sentry-deployment.yaml` under the `containers` section so we create multiple containers in the pod
-4. Copy and paste contents in the same way for `worker-deployment.yaml`
-5. Delete the old deployment configuration files. `rm worker-deployment.yaml web-deployment.yaml cron-deployment.yaml`
+4. Copy and paste contents in the same way for `cron-deployment.yaml`
+5. Delete the old deployment configuration files. `rm web-deployment.yaml worker-deployment.yaml cron-deployment.yaml`
 
 #### Step 3: Run all the deployment configs in kubernetes
 
