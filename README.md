@@ -1,13 +1,19 @@
-## Demo app
+## TypeScript + Sentry = <3
 
 This is a demo app in TS reporting errors to sentry, with source map enabled.
 
 ![Sentry Screenshot](sentry.png)
 
-This uses `scripts/release.sh` to orchestrate building the `dist/` folder and uploading the contents to sentry
+## Setup
 
-Set your env variables before creating a release via `scripts/release.sh`
+1. You will need to have a working sentry cluster first. See [sentry](sentry/) for how to run sentry locally and on kubernetes.
 
-## Deployment
+2. Set your env variables:
 
-You will need to set up your sentry cluster first. For sentry deployment in Kubernetes See [sentry](sentry/)
+```
+export SENTRY_AUTH_TOKEN=..
+export SENTRY_URL=..
+export SENTRY_DSN=..
+```
+
+3. `npm run release`
