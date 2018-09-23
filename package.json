@@ -16,6 +16,7 @@
   "devDependencies": {},
   "scripts": {
     "build": "tsc",
+    "release": "scripts/release.sh",
     "start": "npm run serve",
     "serve": "node dist/server.js",
     "watch-node": "nodemon dist/server.js",
