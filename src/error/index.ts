@@ -2,7 +2,7 @@ export default class MyError {
   message: string;
 
   constructor() {
-    this.message = "Hello error";
+    this.message = "Another error";
   }
 
   boom() {
